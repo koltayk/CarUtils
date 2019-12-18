@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.kk.changemap.ChangeMapMainActivity">
+
+    <TextView
+        android:id="@+id/progName"
+        android:textSize="36dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="kk"
+        tools:ignore="DuplicateIds" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupChangeMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioHR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HERE"
+            android:textSize="36dp"
+            />
+
+
+        <RadioButton
+            android:id="@+id/radioTT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TomTom"
+            android:textSize="36dp"
+            />
+
+
+        <RadioButton
+            android:id="@+id/radioTM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Magyarország NNG"
+            android:textSize="36dp"
+            />
+    </RadioGroup>
+
+    <!-- add button For Submit the Selected item-->
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="270dp"
+        android:text="Csere"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- add clear button for clear the selected item-->
+    <Button
+        android:id="@+id/abort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="270dp"
+        android:text="Mégse"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</RelativeLayout >
